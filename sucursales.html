@@ -1,32 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Only Reef</title>
+    <title>Sucursales - Only Reef</title>
+    <link rel="icon" type="image/png" href="images/onlyreef.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
     <header>
-        <main>
-
-            <h1><img src="images/onlyreef.png" alt="Only Reef" width="50" height="50">Only Reef</h1>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Catalogo</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="ayuda.html">Ayuda</a></li>
-                <li><a href="#">Sucursales</a></li>
-
-
-
-            </ul>
-        </main>
-
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/onlyreef.png" alt="Only Reef Logo">
+                    <span>Only Reef</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="sucursales.html" class="active">Sucursales</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
     </header>
-</body>
 
+    <main>
+        <div class="container">
+            <section class="sucursales-hero">
+                <h1>Nuestras Sucursales</h1>
+                <p>Visita nuestras tiendas especializadas en acuarios marinos</p>
+            </section>
+
+            <section class="sucursales-grid">
+                <div class="sucursal-card">
+                    <div class="sucursal-image">
+                        <img src="images/sucursal1.jpg" alt="Sucursal Roma Norte" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjNDA5MEZGIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4Ij5TdWN1cnNhbCBSb21hIE5vcnRlPC90ZXh0Pgo8L3N2Zz4='">
+                    </div>
+                    <div class="sucursal-info">
+                        <h3>Roma Norte</h3>
+                        <div class="sucursal-details">
+                            <p>📍 <strong>Dirección:</strong><br>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Av.+Álvaro+Obregón+155,+Roma+Norte,+CDMX,+06700" target="_blank" rel="noopener noreferrer" style="color: #4090FF; text-decoration: none;">
+                                Av. Álvaro Obregón 155, Roma Norte<br>
+                                CDMX, 06700
+                            </a></p>
+                            
+                            <p>📞 <strong>Teléfono:</strong><br>
+                            <a href="tel:+525512345678" style="color: #4090FF; text-decoration: none;">+52 55 1234 5678</a></p>
+                            
+                            <p>🕒 <strong>Horarios:</strong><br>
+                            Lun-Vie: 10:00 AM - 7:00 PM<br>
+                            Sábado: 10:00 AM - 6:00 PM<br>
+                            Domingo: 11:00 AM - 5:00 PM</p>
+                            
+                            <p>🚗 <strong>Estacionamiento:</strong> Disponible</p>
+                            <p>🚇 <strong>Metro:</strong> Insurgentes (Línea 1)</p>
+                        </div>
+                        <div class="sucursal-services">
+                            <h4>Servicios disponibles:</h4>
+                            <ul>
+                                <li>✅ Venta de peces marinos</li>
+                                <li>✅ Equipos de filtración</li>
+                                <li>✅ Mantenimiento de acuarios</li>
+                                <li>✅ Asesoría especializada</li>
+                                <li>✅ Análisis de agua</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sucursal-card">
+                    <div class="sucursal-image">
+                        <img src="images/sucursal2.jpg" alt="Sucursal Polanco" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjMDBCQ0Q0Ii8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4Ij5TdWN1cnNhbCBQb2xhbmNvPC90ZXh0Pgo8L3N2Zz4='">
+                    </div>
+                    <div class="sucursal-info">
+                        <h3>Polanco</h3>
+                        <div class="sucursal-details">
+                            <p>📍 <strong>Dirección:</strong><br>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Av.+Presidente+Masaryk+407,+Polanco,+CDMX,+11560" target="_blank" rel="noopener noreferrer" style="color: #00BCD4; text-decoration: none;">
+                                Av. Presidente Masaryk 407, Polanco<br>
+                                CDMX, 11560
+                            </a></p>
+                            
+                            <p>📞 <strong>Teléfono:</strong><br>
+                            <a href="tel:+525587654321" style="color: #00BCD4; text-decoration: none;">+52 55 8765 4321</a></p>
+                            
+                            <p>🕒 <strong>Horarios:</strong><br>
+                            Lun-Vie: 9:00 AM - 8:00 PM<br>
+                            Sábado: 10:00 AM - 7:00 PM<br>
+                            Domingo: 11:00 AM - 6:00 PM</p>
+                            
+                            <p>🚗 <strong>Estacionamiento:</strong> Valet parking</p>
+                            <p>🚇 <strong>Metro:</strong> Polanco (Línea 7)</p>
+                        </div>
+                        <div class="sucursal-services">
+                            <h4>Servicios disponibles:</h4>
+                            <ul>
+                                <li>✅ Venta de peces marinos premium</li>
+                                <li>✅ Equipos de alta gama</li>
+                                <li>✅ Diseño de acuarios personalizados</li>
+                                <li>✅ Instalación profesional</li>
+                                <li>✅ Servicio de entrega</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sucursal-card">
+                    <div class="sucursal-image">
+                        <img src="images/sucursal3.jpg" alt="Sucursal Coyoacán" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRkY2RjAwIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4Ij5TdWN1cnNhbCBDb3lvYWPDoW48L3RleHQ+Cjwvc3ZnPg=='">
+                    </div>
+                    <div class="sucursal-info">
+                        <h3>Coyoacán</h3>
+                        <div class="sucursal-details">
+                            <p>📍 <strong>Dirección:</strong><br>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Av.+Universidad+1321,+Del+Carmen,+Coyoacán,+04100" target="_blank" rel="noopener noreferrer" style="color: #FF6F00; text-decoration: none;">
+                                Av. Universidad 1321, Del Carmen<br>
+                                Coyoacán, 04100
+                            </a></p>
+                            
+                            <p>📞 <strong>Teléfono:</strong><br>
+                            <a href="tel:+525555551234" style="color: #FF6F00; text-decoration: none;">+52 55 5555 1234</a></p>
+                            
+                            <p>🕒 <strong>Horarios:</strong><br>
+                            Lun-Vie: 10:00 AM - 7:00 PM<br>
+                            Sábado: 9:00 AM - 6:00 PM<br>
+                            Domingo: 10:00 AM - 5:00 PM</p>
+                            
+                            <p>🚗 <strong>Estacionamiento:</strong> Limitado</p>
+                            <p>🚇 <strong>Metro:</strong> Coyoacán (Línea 3)</p>
+                        </div>
+                        <div class="sucursal-services">
+                            <h4>Servicios disponibles:</h4>
+                            <ul>
+                                <li>✅ Venta de peces marinos</li>
+                                <li>✅ Alimento especializado</li>
+                                <li>✅ Equipos básicos y avanzados</li>
+                                <li>✅ Cursos de acuariofilia</li>
+                                <li>✅ Reparación de equipos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="mapa-section">
+                <h2>Ubicación de nuestras sucursales</h2>
+                <div class="mapa-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120615.22326726!2d-99.17209815!3d19.432608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f54f729f%3A0x31ed39c8c5ae539!2sCiudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1620000000000!5m2!1ses!2smx" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section> -->
+
+            <section class="contact-section">
+                <h2>¿Necesitas más información?</h2>
+                <div class="contact-grid">
+                    <div class="contact-option">
+                        <h3>📱 WhatsApp</h3>
+                        <p>Chatea con nosotros</p>
+                        <a href="https://wa.me/525512345678" class="btn-contact">+52 55 1234 5678</a>
+                    </div>
+                    <div class="contact-option">
+                        <h3>📧 Email</h3>
+                        <p>Escríbenos</p>
+                        <a href="mailto:info@onlyreef.com" class="btn-contact">info@onlyreef.com</a>
+                    </div>
+                    <div class="contact-option">
+                        <h3>🕒 Horarios</h3>
+                        <p>Atención general</p>
+                        <p><strong>Lun-Vie:</strong> 9:00 AM - 8:00 PM</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
 </html>

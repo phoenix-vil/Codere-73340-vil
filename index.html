@@ -1,61 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Only Reef</title>
+    <link rel="icon" type="image/png" href="images/onlyreef.png">
     <link rel="stylesheet" href="css/style.css">
-
+</head>
 <body>
-
     <header>
-        <main>
-
-            <h1><img src="images/onlyreef.png" alt="Only Reef" width="50" height="50">Only Reef</h1>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="catalogo.html">Catalogo</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="ayuda.html">Ayuda</a></li>
-                <li><a href="sucursales.html">Sucursales</a></li>
-            </ul>
-            <section>
-                <h2>Especializados en acuarios marinos</h2>
-                <img src="images/ocelaris2.jpg" width="400" height="150">
-
-                <p>El pez payaso Ocellaris, científicamente conocido como Amphiprion ocellaris, es un pez marino de la
-                    familia Pomacentridae. Es fácilmente reconocible por su color naranja brillante, tres franjas
-                    blancas y una línea negra que las delimita.
-                    Descripción técnica:
-                    Tamaño: Alcanza una longitud máxima de 11 cm.
-                    Coloración: Cuerpo de color naranja a marrón rojizo, con tres franjas blancas verticales delimitadas
-                    por una fina línea negra.
-                    Aletas: Aleta caudal redondeada, con 11 espinas en la dorsal (en comparación con las 10 de
-                    Amphiprion percula), 13-17 radios dorsales suaves, 2 espinas anales y 11-13 radios anales suaves.
-                    Cuerpo: Forma ovalada, comprimido lateralmente, con un perfil redondo.
-                    Distribución: Se encuentra en los arrecifes de coral del Indo-Pacífico.
-                    Hábitat: Vive en asociación con anémonas marinas, las cuales le brindan protección y alimento a
-                    cambio de que el pez payaso limpie la anémona.
-                    Comportamiento: Es territorial y establece una relación simbiótica con las anémonas.
-                    Características adicionales:
-                    Variaciones:
-                    Existe una variación negra de Amphiprion ocellaris en el área de Darwin, Australia, conocida como
-                    "Darwin Ocellaris".
-                    Confusión con Amphiprion percula:
-                    Se puede confundir con Amphiprion percula (pez payaso percula), pero A. ocellaris tiene una aleta
-                    dorsal más alta y 11 espinas en la dorsal, mientras que A. percula tiene 10.
-                    Importancia comercial:
-                    Es uno de los peces ornamentales marinos más importantes, tanto en la extracción como en la cría.
-                    En resumen, el pez payaso Ocellaris es un pez pequeño, llamativo y fácil de identificar, que juega
-                    un papel importante en los ecosistemas de arrecifes de coral y es popular en la acuariofilia. </p>
-            </section>
-
-        </main>
-
-
-
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/onlyreef.png" alt="Only Reef Logo">
+                    <span>Only Reef</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
     </header>
-</body>
 
+    <main>
+        <div class="container">
+            <section class="hero-section" id="inicio">
+                <h1 class="hero-title">Especializados en acuarios marinos</h1>
+                
+                <div class="hero-content">
+                    <div>
+                        <img src="images/ocelaris2.jpg" alt="Pez Payaso Ocellaris" class="hero-image">
+                    </div>
+                    
+                    <div class="hero-text">
+                        <h3>Pez Payaso Ocellaris</h3>
+                        <p>El pez payaso Ocellaris, científicamente conocido como <em>Amphiprion ocellaris</em>, es un pez marino de la familia Pomacentridae. Es fácilmente reconocible por su color naranja brillante, tres franjas blancas y una línea negra que las delimita.</p>
+                        
+                        <p><strong>Características principales:</strong></p>
+                        <p>• <strong>Tamaño:</strong> Alcanza una longitud máxima de 11 cm<br>
+                        • <strong>Coloración:</strong> Cuerpo naranja a marrón rojizo con tres franjas blancas<br>
+                        • <strong>Hábitat:</strong> Arrecifes de coral del Indo-Pacífico<br>
+                        • <strong>Comportamiento:</strong> Vive en simbiosis con anémonas marinas</p>
+                        
+                        <p>Es uno de los peces ornamentales marinos más importantes y populares en la acuariofilia marina, jugando un papel crucial en los ecosistemas de arrecifes de coral.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
 </html>

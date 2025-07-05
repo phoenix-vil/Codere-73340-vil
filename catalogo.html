@@ -1,33 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Only Reef</title>
+    <title>Catálogo - Only Reef</title>
+    <link rel="icon" type="image/png" href="images/onlyreef.png">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+    </style>
 </head>
-
 <body>
-
-
-
     <header>
-        <main>
-
-            <h1><img src="images/onlyreef.png" alt="Only Reef" width="50" height="50">Only Reef</h1>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Catalogo</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="ayuda.html">Ayuda</a></li>
-                <li><a href="sucursales.html">Sucursales</a></li>
-
-
-
-            </ul>
-        </main>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/onlyreef.png" alt="Only Reef Logo">
+                    <span>Only Reef</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
     </header>
-</body>
 
+    <main>
+        <div class="container">
+            <div class="catalog-container">
+                <div class="catalog-header">
+                    <div class="catalog-title">
+                        <h1>Catálogo de Peces Marinos</h1>
+                        <p>Descubre nuestra colección de peces tropicales para tu acuario</p>
+                    </div>
+                    <div class="catalog-filters">
+                        <button class="filter-btn active">Todos</button>
+                        <button class="filter-btn">Pez Payaso</button>
+                        <button class="filter-btn">Pez Ángel</button>
+                        <button class="filter-btn">Pez Cirujano</button>
+                        <button class="filter-btn">Invertebrados</button>
+                    </div>
+                </div>
+
+                    <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Ocelaris (2).jpg" alt="Pez Payaso Ocellaris" width="300" height="200">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Pez Payaso Ocellaris</h3>
+                        <p class="product-description">Amphiprion ocellaris, ideal para principiantes. Resistente y colorido, perfecto para acuarios comunitarios.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$500</span>
+                            <button class="add-to-cart">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Angel.jpg" alt="Pez Ángel"width="300" height="200">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Pez Ángel Emperador</h3>
+                        <p class="product-description">Pomacanthus imperator, especie espectacular con colores vibrantes. Requiere acuario grande.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$3000</span>
+                            <button class="add-to-cart">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Cirujano Azul.jpg" alt="Cirujano" width="300" height="200">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Pez Cirujano Azul</h3>
+                        <p class="product-description">Paracanthurus hepatus, conocido como Dory. Activo nadador, necesita espacio amplio.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$2000</span>
+                            <button class="add-to-cart">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Camaron Limpiador.jpg" alt="Camaron" width="300" height="200">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Camarón Limpiador</h3>
+                        <p class="product-description">Lysmata amboinensis, excelente para limpieza del acuario. Muy activo y beneficioso.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$1200</span>
+                            <button class="add-to-cart">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Gobio Mandarin.jpg" alt="Mandarin" width="300" height="200">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Gobio Mandarin</h3>
+                        <p class="product-description">Synchiropus splendidus, uno de los peces más coloridos. Requiere experiencia avanzada.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$5000</span>
+                            <button class="add-to-cart">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Anemona.jpg" alt="Anemona" width="300" height="200">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Anémona Burbuja</h3>
+                        <p class="product-description">Entacmaea quadricolor, perfecta simbiosis con peces payaso. Requiere iluminación intensa.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$800</span>
+                            <button class="add-to-cart">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <script>
+        // Menú hamburguesa
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Filtros del catálogo
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+
+        // Botones agregar al carrito
+        document.querySelectorAll('.add-to-cart').forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.textContent = '✓ Agregado';
+                btn.style.background = '#2ecc71';
+                setTimeout(() => {
+                    btn.textContent = 'Agregar';
+                    btn.style.background = '#2ecc71';
+                }, 2000);
+            });
+        });
+    </script>
+</body>
 </html>

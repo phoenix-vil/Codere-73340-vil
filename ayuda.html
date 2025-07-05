@@ -1,29 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Only Reef</title>
+    <title>Ayuda - Only Reef</title>
+    <link rel="icon" type="image/png" href="images/onlyreef.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
     <header>
-        <main>
-
-            <h1><img src="images/onlyreef.png" alt="Only Reef" width="50" height="50">Only Reef</h1>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Catalogo</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="#">Ayuda</a></li>
-                <li><a href="sucursales.html">Sucursales</a></li>
-
-            </ul>
-        </main>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/onlyreef.png" alt="Only Reef Logo">
+                    <span>Only Reef</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="ayuda.html" class="active">Ayuda</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
     </header>
-</body>
 
+    <main>
+        <div class="container">
+            <section class="help-hero">
+                <h1>Centro de Ayuda</h1>
+                <p>Encuentra respuestas a tus preguntas sobre acuarios marinos</p>
+            </section>
+
+            <section class="help-search">
+                <div class="search-box">
+                    <input type="text" placeholder="¿En qué podemos ayudarte?" id="searchInput">
+                    <button type="button" onclick="searchHelp()">🔍</button>
+                </div>
+            </section>
+
+            <section class="help-categories">
+                <h2>Categorías de Ayuda</h2>
+                <div class="categories-grid">
+                    <div class="category-card" onclick="showCategory('cuidados')">
+                        <div class="category-icon">🐠</div>
+                        <h3>Cuidado de Peces</h3>
+                        <p>Guías sobre alimentación, salud y mantenimiento de peces marinos</p>
+                    </div>
+                    <div class="category-card" onclick="showCategory('acuarios')">
+                        <div class="category-icon">🏠</div>
+                        <h3>Montaje de Acuarios</h3>
+                        <p>Consejos para configurar y mantener tu acuario marino</p>
+                    </div>
+                    <div class="category-card" onclick="showCategory('productos')">
+                        <div class="category-icon">🛒</div>
+                        <h3>Productos y Pedidos</h3>
+                        <p>Información sobre nuestros productos y proceso de compra</p>
+                    </div>
+                    <div class="category-card" onclick="showCategory('soporte')">
+                        <div class="category-icon">💬</div>
+                        <h3>Soporte Técnico</h3>
+                        <p>Ayuda con equipos de filtración, iluminación y más</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq-section">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>¿Cómo debo aclimatar un pez nuevo a mi acuario?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>La aclimatación es crucial para la salud de tus peces. Recomendamos el método de goteo durante 2-3 horas, equilibrando gradualmente la temperatura y parámetros del agua. Nunca agregues el agua de transporte a tu acuario.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>¿Qué parámetros de agua son ideales para un acuario marino?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Los parámetros ideales son:</p>
+                            <ul>
+                                <li>Salinidad: 1.023-1.025</li>
+                                <li>pH: 8.1-8.4</li>
+                                <li>Temperatura: 24-26°C</li>
+                                <li>Amoníaco y Nitritos: 0 ppm</li>
+                                <li>Nitratos: <20 ppm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>¿Con qué frecuencia debo alimentar a mis peces marinos?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>La mayoría de peces marinos deben alimentarse 2-3 veces al día con pequeñas cantidades que puedan consumir en 2-3 minutos. Es mejor alimentar poco y frecuente que mucho de una vez.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>¿Cómo puedo contactar al equipo de Only Reef?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Puedes contactarnos a través de:</p>
+                            <ul>
+                                <li>WhatsApp: +52 55 1234 5678</li>
+                                <li>Email: info@onlyreef.com</li>
+                                <li>Visitando cualquiera de nuestras sucursales</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>¿Ofrecen garantía en los peces?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, ofrecemos 7 días de garantía en todos nuestros peces, siempre y cuando se cumplan las condiciones de aclimatación y mantenimiento que proporcionamos con cada compra.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-help">
+                <h2>¿Necesitas más ayuda?</h2>
+                <p>Nuestro equipo de expertos en acuarios marinos está aquí para ayudarte</p>
+                <div class="contact-options">
+                    <div class="contact-card">
+                        <h3>💬 Chat en Vivo</h3>
+                        <p>Habla con nuestros expertos</p>
+                        <p><strong>Lun-Vie:</strong> 9:00 AM - 6:00 PM</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>📞 Llamada Telefónica</h3>
+                        <p>+52 55 1234 5678</p>
+                        <p><strong>Lun-Sab:</strong> 10:00 AM - 7:00 PM</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>📧 Email</h3>
+                        <p>info@onlyreef.com</p>
+                        <p><strong>Respuesta:</strong> 24-48 horas</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const faqAnswer = faqItem.querySelector('.faq-answer');
+            const toggle = element.querySelector('.faq-toggle');
+            
+            faqItem.classList.toggle('active');
+            
+            if (faqItem.classList.contains('active')) {
+                faqAnswer.style.display = 'block';
+                toggle.textContent = '-';
+            } else {
+                faqAnswer.style.display = 'none';
+                toggle.textContent = '+';
+            }
+        }
+
+        function showCategory(category) {
+            alert(`Mostrando contenido de la categoría: ${category}`);
+        }
+
+        function searchHelp() {
+            const searchTerm = document.getElementById('searchInput').value;
+            if (searchTerm.trim()) {
+                alert(`Buscando: ${searchTerm}`);
+            }
+        }
+    </script>
+</body>
 </html>
